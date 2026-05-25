@@ -30,22 +30,21 @@ dependencies = [
     "deepspeed==0.9.5",
     "peft==0.4.0",
     "transformers",
-    "accelerate==0.21.0",
-    "bitsandbytes==0.41.0",
-    "scikit-learn==1.2.2",
-    "sentencepiece==0.1.99",
-    "einops==0.6.1",
-    "einops-exts==0.0.4",
-    "gradio_client==0.2.9",
-    "open-clip-torch==2.23.0",
-    "timm==0.9.12",
+    "accelerate",
+    "bitsandbytes",
+    "scikit-learn",
+    "sentencepiece",
+    "einop",
+    "einops-exts",
+    "gradio_client",
+    "open-clip-torch",
+    "timm",
     "fire",
-    "evaluate",
-    "radgraph==0.0.9",
-    "rouge_score",
     "statsmodels",
-    "sacrebleu"
 ]
+
+[dependency-groups]
+metrics = ["evaluate", "radgraph==0.0.9", "rouge_score", "sacrebleu"]
 
 [project.urls]
 "Homepage" = "https://github.com/microsoft/LLaVA-Rad"
